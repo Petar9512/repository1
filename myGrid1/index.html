@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grid composition</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+          /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+           } */
+
+          .container {
+            display: grid;
+            width: 800px;
+            height: 800px;
+            background-color: black;
+            grid-template-rows: 245px 122px 168px 225px;
+            grid-template-columns: 136px 202px 238px 184px;
+            gap: 10px;
+            margin: auto;
+          }
+
+          .item {
+            background-color: #F0F1EC;
+          }
+
+          .blue1 {
+            background-color: blue;
+            grid-row: span 2;
+            border-left: 10px solid black;
+            border-top: 5px solid black;
+          }
+
+          .red1 {
+            background-color: red;
+            grid-area: 2/ 2/ 4/ 2;
+            border-right: 8px solid black;
+          }
+
+          .three {
+            background-color: blue;
+            border-bottom: 50px solid;
+            border-left: 30px solid;
+            border-right: 10px solid;
+            border-top: 5px solid;
+          }
+
+          .four {
+            position: relative;
+            grid-row: span 2;
+            border-right: 30px solid green;
+            border-bottom: 30px solid yellow;
+            border-left: 30px solid purple;
+            border-top: 30px solid orange;
+          }
+
+          .inside1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+          }
+
+          .six {
+            border-left: 30px solid black;
+            border-top: 20px solid black;
+          }
+
+          .seven {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: span 2;
+            border-right: 20px solid red;
+            border-bottom: 20px solid blue;
+            border-left: 20px solid red;
+            border-top: 20px solid blue;
+          }
+
+          .inside2 {
+            width: 50px;
+            height: 50px;
+            background-color: purple;
+            border-radius: 50%;
+          }
+
+          .blue2 {
+            background-color: blue;
+            border-left: 10px solid black;
+          }
+
+          .eight {
+            border-left: 20px solid black;
+          }
+
+          .ten {
+            grid-area: 4/ 2/ 5/ 5;
+            border-top: 30px solid red;
+            border-right: 30px solid blue;
+            border-bottom: 30px solid red;
+            border-left: 30px solid blue;
+            position: relative;
+          }
+
+          .inside3 {
+            width: 50px;
+            height: 50px;
+            background-color: purple;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .inside4 {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+          }
+
+          .inside5 {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 25%;
+            transform: translate(50%, -50%);
+          }
+
+          .nine {
+            border-bottom: 50px solid black;
+            border-top: 50px solid black;
+          }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item blue1"></div>
+            <div class="item red1"></div>
+            <div class="item three"></div>
+            <div class="item four">
+              <div class="inside1"></div>
+            </div>
+            <div class="item six"></div>
+            <div class="item seven">
+              <div class="inside2"></div>
+            </div>
+            <div class="item eight"></div>
+            <div class="item nine"></div>
+            <div class="item blue2"></div>
+            <div class="item ten">
+              <div class="inside3"></div>
+              <div class="inside4"></div>
+              <div class="inside5"></div>
+            </div>
+        </div>
+    </body>
+</html>
