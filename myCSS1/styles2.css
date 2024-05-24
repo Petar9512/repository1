@@ -1,0 +1,89 @@
+.div-one {
+    background-color: green;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.div-two {
+    background-color: red;
+    width: 160px;
+    height: 5px;
+    z-index: 1;
+}
+
+.first {
+    position: absolute;
+    top: 260px;
+    left: 120px;
+}
+
+.second {
+    position: absolute;
+    top: 191px;
+    left: 159px;
+    rotate: 60deg;
+}
+
+.third {
+    position: absolute;
+    top: 191px;
+    right: 159px;
+    rotate: -60deg;
+}
+
+.div-three {
+    background-color: yellow;
+    width: 46px;
+    height: 5px;
+}
+
+.first2 {
+    position: absolute;
+    top: 235px;
+    left: 176px;
+    rotate: 90deg;
+}
+
+.second2 {
+    position: absolute;
+    top: 202px;
+    left: 157px;
+    rotate: 30deg;
+}
+
+.third2 {
+    position: absolute;
+    top: 202px;
+    right: 157px;
+    rotate: -30deg;
+}
+
+.div-four {
+    background-color: blue;
+    width: 89px;
+    height: 5px;
+}
+
+.first3 {
+    position: absolute;
+    top: 170px;
+    left: 155px;
+    rotate: 90deg;
+}
+
+.second3 {
+    position: absolute;
+    top: 234px;
+    left: 192px;
+    rotate: 30deg;
+}
+
+.third3 {
+    position: absolute;
+    top: 234px;
+    right: 192px;
+    rotate: -30deg;
+}
